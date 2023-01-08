@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import { Half, PartWrapper } from "../../../pages/quiz1/styles";
 import { Form } from "../../form";
-import img from "../../../assets/images/quiz12_7.png";
+import img from "../../../assets/images/quiz13_10.png";
 
-function Quiz12_7() {
+function Quiz13_10() {
   const [data, setData] = useState({});
-  const R = data?.R || 0;
+  const T = data?.T || 0;
   const E = data?.E || 0;
+  const τd = data?.τd || 0;
 
   return (
     <PartWrapper>
       <Half>
-        <Form data={data} setData={setData} inputs={["R", "E"]} />
-        i(5T) = (0.5 * E) / R + (E / (6 * R)) * Math.E ** -10<br />
-        Result: {((0.5 * E) / R + (E / (6 * R)) * Math.E ** -10).toFixed(4)} I
+        <Form data={data} setData={setData} inputs={["E", "τd", "T"]} />
+        U = (-T * E) / τd
+        <br />
+        Result: {((-T * E) / τd).toFixed(4)} v
       </Half>
       <Half>
         <img src={img} alt="" />
@@ -22,4 +24,4 @@ function Quiz12_7() {
   );
 }
 
-export default Quiz12_7;
+export default Quiz13_10;

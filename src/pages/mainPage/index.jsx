@@ -3,6 +3,9 @@ import { Link, Route, Routes } from "react-router-dom";
 import Quiz1 from "../quiz1";
 import Quiz10 from "../quiz10";
 import Quiz11 from "../quiz11";
+import Quiz12 from "../quiz12";
+import Quiz13 from "../quiz13";
+import Quiz14 from "../quiz14";
 import Quiz2 from "../quiz2";
 import Quiz3 from "../quiz3";
 import Quiz4 from "../quiz4";
@@ -61,6 +64,15 @@ function MainPage() {
                 <li>
                   <Link to={"/ieec/11"}>Quiz 11</Link>
                 </li>
+                <li>
+                  <Link to={"/ieec/12"}>Quiz 12</Link>
+                </li>
+                <li>
+                  <Link to={"/ieec/13"}>Quiz 13</Link>
+                </li>
+                <li>
+                  <Link to={"/ieec/14"}>Quiz 14</Link>
+                </li>
               </ul>
             </div>
           }
@@ -75,6 +87,9 @@ function MainPage() {
         <Route path="/ieec/9" element={<Quiz9 />} />
         <Route path="/ieec/10" element={<Quiz10 />} />
         <Route path="/ieec/11" element={<Quiz11 />} />
+        <Route path="/ieec/12" element={<Quiz12 />} />
+        <Route path="/ieec/13" element={<Quiz13 />} />
+        <Route path="/ieec/14" element={<Quiz14 />} />
       </Routes>
     </div>
   );

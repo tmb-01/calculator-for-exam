@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { Half, PartWrapper } from "../../../pages/quiz1/styles";
 import { Form } from "../../form";
-import img from "../../../assets/images/quiz12_10.png";
+import img from "../../../assets/images/quiz14_3.png";
 
-function Quiz12_10() {
+function Quiz14_3() {
   const [data, setData] = useState({});
+  const t = data?.t || 0;
+  const E = data?.E || 0;
   const C = data?.C || 0;
+  const L = data?.L || 0;
   const R = data?.R || 0;
-  const R1 = data?.R1 || 0;
-  const R2 = data?.R2 || 0;
-  const E1 = data?.E1 || 0;
-  const E2 = data?.E2 || 0;
 
   return (
     <PartWrapper>
@@ -18,17 +17,13 @@ function Quiz12_10() {
         <Form
           data={data}
           setData={setData}
-          inputs={["C", "R", "R1", "R2", "E1", "E2"]}
+          inputs={["t", "E", "C", "L", "R"]}
         />
-        deltaW = 0.5 * C * (R ** 2) * (((E2 / (R2 + R)) ** 2) - ((E1 / (R1 + R))
-        ** 2))
-        <br />
+        i = ((0.25 * E) / R) * (5 + Math.E ** (-t / (2 * R * C)) - 2 * Math.E ** ((-t * R) / L))<br />
         Result:{" "}
         {(
-          0.5 *
-          C *
-          R ** 2 *
-          ((E2 / (R2 + R)) ** 2 - (E1 / (R1 + R)) ** 2)
+          ((0.25 * E) / R) *
+          (5 + Math.E ** (-t / (2 * R * C)) - 2 * Math.E ** ((-t * R) / L))
         ).toFixed(4)}
       </Half>
       <Half>
@@ -38,4 +33,4 @@ function Quiz12_10() {
   );
 }
 
-export default Quiz12_10;
+export default Quiz14_3;

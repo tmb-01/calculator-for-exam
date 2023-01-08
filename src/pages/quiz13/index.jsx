@@ -30,6 +30,16 @@ import Quiz12_6 from "../../components/quiz12_list/quiz12_6";
 import Quiz12_7 from "../../components/quiz12_list/quiz12_7";
 import Quiz12_8 from "../../components/quiz12_list/quiz12_8";
 import Quiz12_9 from "../../components/quiz12_list/quiz12_9";
+import Quiz13_1 from "../../components/quiz13_list/quiz13_1";
+import Quiz13_10 from "../../components/quiz13_list/quiz13_10";
+import Quiz13_2 from "../../components/quiz13_list/quiz13_2";
+import Quiz13_3 from "../../components/quiz13_list/quiz13_3";
+import Quiz13_4 from "../../components/quiz13_list/quiz13_4";
+import Quiz13_5 from "../../components/quiz13_list/quiz13_5";
+import Quiz13_6 from "../../components/quiz13_list/quiz13_6";
+import Quiz13_7 from "../../components/quiz13_list/quiz13_7";
+import Quiz13_8 from "../../components/quiz13_list/quiz13_8";
+import Quiz13_9 from "../../components/quiz13_list/quiz13_9";
 import Quiz4_1 from "../../components/quiz4_list/quiz4_1";
 import Quiz4_10 from "../../components/quiz4_list/quiz4_10";
 import Quiz4_2 from "../../components/quiz4_list/quiz4_2";
@@ -83,23 +93,23 @@ import Quiz9_9 from "../../components/quiz9_list/quiz9_9";
 
 import { Title, Wrapper } from "./styles";
 
-function Quiz12() {
+function Quiz13() {
   return (
     <Wrapper>
       <Link to="/ieec">Go Back</Link>
-      <Title>Quiz 12</Title>
-      <Quiz12_1 />
-      <Quiz12_2 />
-      <Quiz12_3 />
-      <Quiz12_4 />
-      <Quiz12_5 />
-      <Quiz12_6 />
-      <Quiz12_7 />
-      <Quiz12_8 />
-      <Quiz12_9 />
-      <Quiz12_10 />
+      <Title>Quiz 13</Title>
+      <Quiz13_1 />
+      <Quiz13_2 />
+      <Quiz13_3 />
+      <Quiz13_4 />
+      <Quiz13_5 />
+      <Quiz13_6 />
+      <Quiz13_7 />
+      <Quiz13_8 />
+      <Quiz13_9 />
+      <Quiz13_10 />
     </Wrapper>
   );
 }
 
-export default Quiz12;
+export default Quiz13;
