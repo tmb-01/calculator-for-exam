@@ -42,6 +42,8 @@ import Quiz7_8 from "../../components/quiz7_list/quiz7_8";
 import Quiz7_9 from "../../components/quiz7_list/quiz7_9";
 import Quiz9_1 from "../../components/quiz9_list/quiz9_1";
 import Quiz9_10 from "../../components/quiz9_list/quiz9_10";
+import Quiz9_11 from "../../components/quiz9_list/quiz9_11";
+import Quiz9_12 from "../../components/quiz9_list/quiz9_12";
 import Quiz9_2 from "../../components/quiz9_list/quiz9_2";
 import Quiz9_3 from "../../components/quiz9_list/quiz9_3";
 import Quiz9_4 from "../../components/quiz9_list/quiz9_4";
@@ -64,10 +66,12 @@ function Quiz9() {
       <Quiz9_4 />
       <Quiz9_5 />
       <Quiz9_6 />
-      <Quiz9_7 />
+      {/* <Quiz9_7 /> */}
       <Quiz9_8 />
       <Quiz9_9 />
-      <Quiz9_10 />
+      {/* <Quiz9_10 /> */}
+      <Quiz9_11 />
+      <Quiz9_12 />
     </Wrapper>
   );
 }

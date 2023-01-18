@@ -12,10 +12,13 @@ function Quiz9_5() {
   return (
     <PartWrapper>
       <Half>
-        <Form data={data} setData={setData} 
-        inputs={["C","C1","Ct"]} />
+        How large must capacitance Cx be, in order to produce a total
+        capacitance of Ct = 4 µF in the network of capacitors, if C = 9 µF, C1 =
+        1 µF.
+        <br />
+        <Form data={data} setData={setData} inputs={["Ct", "C", "C1"]} />
         Cx = (C * C1 - Ct * C1 - Ct * C) / (Ct - C) <br />
-        Result: {((C * C1 - Ct * C1 - Ct * C) / (Ct - C)).toFixed(4)}
+        Result: {((C * C1 - Ct * C1 - Ct * C) / (Ct - C)).toFixed(4)} µF
       </Half>
       <Half>
         <img src={img} alt="" />

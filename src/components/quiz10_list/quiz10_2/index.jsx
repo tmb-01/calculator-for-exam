@@ -12,8 +12,12 @@ function Quiz10_2() {
   return (
     <PartWrapper>
       <Half>
+        A switch closes at t=0. Find the duration of the transient state (ST),
+        in ms. R1-2kn, R=9kn, C-7uF and E=3V.
+        <br />
         <Form data={data} setData={setData} inputs={["C", "R1", "R2"]} />
-        t = (10 * C * R1 * R2) / (R1 + R2)<br />
+        t = (10 * C * R1 * R2) / (R1 + R2)
+        <br />
         Result: {((10 * C * R1 * R2) / (R1 + R2)).toFixed(4)} ms
       </Half>
       <Half>

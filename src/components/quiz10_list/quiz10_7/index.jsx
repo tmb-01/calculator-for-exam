@@ -13,12 +13,15 @@ function Quiz10_7() {
   return (
     <PartWrapper>
       <Half>
-        <Form data={data} setData={setData} inputs={["E", "C", "R1", "R2"]} />
+        A switch closes at t=0. Find the total energy supplied by the source to
+        the capacitor, in pWs. R₁=2k, R=7kn, C=7uF and E=6V.
         <br />
-        Result: {(0.5 * C * (E ** 2) * (((R1 - R2) / (R1 + R2)) ** 2)).toFixed(
+        <Form data={data} setData={setData} inputs={["E", "C", "R1", "R2"]} />
+        W = 0.5 * C * E ** 2 * ((R1 - R2) / (R1 + R2)) ** 2<br />
+        Result: {(0.5 * C * E ** 2 * ((R1 - R2) / (R1 + R2)) ** 2).toFixed(
           4
         )}{" "}
-        nanoWatt
+        nanoWatt (J)
       </Half>
       <Half>
         <img src={img} alt="" />

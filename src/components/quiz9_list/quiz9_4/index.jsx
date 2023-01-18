@@ -12,6 +12,10 @@ function Quiz9_4() {
   return (
     <PartWrapper>
       <Half>
+        A current i(t) flows through real electromagnet coil. Calculate time t
+        when the coil current rises to 50% of its maximal value. E = 33 V, R =
+        0.3 Ω, L = 7.5 H, RL = 4.4 Ω. Write result with unit!
+        <br />
         <Form data={data} setData={setData} inputs={["L", "R", "R2"]} />
         t = -(L / (R + R2)) * Math.log(0.5) <br />
         Result: {(-(L / (R + R2)) * Math.log(0.5)).toFixed(4)} s

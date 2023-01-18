@@ -12,6 +12,9 @@ function Quiz9_2() {
   return (
     <PartWrapper>
       <Half>
+        What constant current, is required to charge a 3 μF capacitor from 0 to
+        2 V in 5 ms ? (The unit must be placed)
+        <br />
         <Form
           data={data}
           setData={setData}
@@ -19,7 +22,7 @@ function Quiz9_2() {
         />
         I = C * (deltaU / deltaT)
         <br />
-        Result: {(C * (deltaU / deltaT)).toFixed(4)} A
+        Result: {(C * (deltaU / deltaT)).toFixed(2)} mA
       </Half>
       <Half>
         <img src={img} alt="" />

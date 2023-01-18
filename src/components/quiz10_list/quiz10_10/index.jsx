@@ -14,6 +14,10 @@ function Quiz10_10() {
   return (
     <PartWrapper>
       <Half>
+        A switch is moved from 1 to 2 at t=0. Calculate increment of the
+        capacitor voltage: AU-U-Us (sign and value, in V). E₁=15V; E2-20V, R=90,
+        R₁=30; R2=80; C=2µF.
+        <br />
         <Form
           data={data}
           setData={setData}

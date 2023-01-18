@@ -12,9 +12,12 @@ function Quiz9_6() {
   return (
     <PartWrapper>
       <Half>
+        Given a coil of z = 700 turns and L = 17 mH inductance. Find the
+        inductance L’ (with unit), after adding 0.5z turns: z’ = (1 + 0.5)z.
+        <br />
         <Form data={data} setData={setData} inputs={["L", "z", "z_"]} />
         L' = (L * (z ** 2)) / (z_ ** 2) <br />
-        Result: {((L * (z ** 2)) / (z_ ** 2)).toFixed(4)}
+        Result: {((L * z ** 2) / z_ ** 2).toFixed(4)} mH
       </Half>
       <Half>
         <img src={img} alt="" />

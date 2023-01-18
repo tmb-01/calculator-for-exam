@@ -13,8 +13,12 @@ function Quiz10_4() {
   return (
     <PartWrapper>
       <Half>
+        A switch openes at t=0. Calculate increment of the coil current: Al=l-lo
+        (sign and value, in A). E₁=13V; E2-14V, R1=302; R2=402; L=1mH.
+        <br />
         <Form data={data} setData={setData} inputs={["E1", "E2", "R1", "R2"]} />
-        deltaI = (E2 - E1) / (R1 + R2) - E2 / R2<br />
+        deltaI = (E2 - E1) / (R1 + R2) - E2 / R2
+        <br />
         Result: {((E2 - E1) / (R1 + R2) - E2 / R2).toFixed(4)} A
       </Half>
       <Half>

@@ -13,8 +13,11 @@ function Quiz10_9() {
   return (
     <PartWrapper>
       <Half>
-        <Form data={data} setData={setData} inputs={["E1", "E2", "R1", "R2"]} />
+        A switch openes at t=0. Calculate increment of the capacitor voltage:
+        AU-U-Uo (sign and value, in V) E1-10V; E=14V, R)=60; Rs 30, C=8uF,
         <br />
+        <Form data={data} setData={setData} inputs={["E1", "E2", "R1", "R2"]} />
+        C = -E1 + (E1 * R2 + E2 * R1) / (R1 + R2)<br />
         Result: {(-E1 + (E1 * R2 + E2 * R1) / (R1 + R2)).toFixed(4)} V
       </Half>
       <Half>

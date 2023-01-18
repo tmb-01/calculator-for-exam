@@ -62,6 +62,9 @@ function MainPage() {
                   <Link to={"/ieec/10"}>Quiz 10</Link>
                 </li>
                 <li>
+                  <Link to={"/ieec/9-10"}>Quiz 9-10</Link>
+                </li>
+                <li>
                   <Link to={"/ieec/11"}>Quiz 11</Link>
                 </li>
                 <li>
@@ -86,6 +89,15 @@ function MainPage() {
         <Route path="/ieec/7" element={<Quiz7 />} />
         <Route path="/ieec/9" element={<Quiz9 />} />
         <Route path="/ieec/10" element={<Quiz10 />} />
+        <Route
+          path="/ieec/9-10"
+          element={
+            <>
+              <Quiz9 />
+              <Quiz10 />
+            </>
+          }
+        />
         <Route path="/ieec/11" element={<Quiz11 />} />
         <Route path="/ieec/12" element={<Quiz12 />} />
         <Route path="/ieec/13" element={<Quiz13 />} />

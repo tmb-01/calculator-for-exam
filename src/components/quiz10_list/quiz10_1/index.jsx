@@ -11,8 +11,10 @@ function Quiz10_1() {
   return (
     <PartWrapper>
       <Half>
-        <Form data={data} setData={setData} 
-        inputs={["R","C"]} />
+        A switch is closed at t=0. Calculate duration of the transient state,
+        in us. Assume this duration as five time constants. R=20, E=6V, C=6µF.
+        <br />
+        <Form data={data} setData={setData} inputs={["R", "C"]} />
         t = (5 / 2) * R * C <br />
         Result: {((5 / 2) * R * C).toFixed(4)} nanosecond
       </Half>
